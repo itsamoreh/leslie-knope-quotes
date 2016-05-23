@@ -1,0 +1,150 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #a8a8a8;
+	width: 95%;
+	height: 95%;
+	margin: auto;
+}
+
+/* TEXT */
+
+h1 {
+	font-family: Roboto Condensed;
+	font-size: 80px;
+	font-weight: 700;
+	margin: 10px;
+	text-align: center;
+}
+
+h2 {
+	font-family: Roboto Condensed;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 10px;
+	text-align: center;
+}
+
+p {
+	font-family: Roboto Slab;
+}
+
+/* TEXT COLORS */
+
+.text-dark {
+	color: #1d4e89;
+}
+
+.text-light {
+	color: #eaeaea;
+}
+
+.text-accent {
+	color: #cc2936;
+}
+
+/* PICTURE */
+
+.circle-img-container {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.circle-img {
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	border: 2px solid #fefefe;
+	border-radius: 50%;
+	display: block;
+}
+
+/* QUOTATION MARKS */
+
+.qMarkContainer {
+	position: absolute;
+	width: 70%;
+	height: 5vh;
+	top: 50vh;
+	left: 15%;
+	margin: auto;
+}
+
+.qMarkContainer .container {
+	width: 50%;
+	height: 5vh;
+	float: left;
+}
+
+.qMarkContainer .qMarkContainer2 {
+	text-align: right;
+}
+
+/* QUOTE */
+
+.quoteBox {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: table;
+}
+
+.quoteBoxInner {
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+
+.quote {
+	width: 800px;
+	font-weight: bold;
+	font-size: 3rem;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* NAVIGATION */
+
+.centerIcons {
+	margin: 10px auto;
+	text-align: center;
+}
+
+.navigation {
+	position: absolute;
+	width: 95%;
+	bottom: 5%;
+	margin: auto;
+}
+
+.navigation .container {
+	width: 40%;
+	float: left;
+	margin: 0 auto;
+}
+
+.navigation .container:hover {
+	color: #1d4e89;
+}
+
+.navigation .navContainer2 {
+	float: right;
+}
+
+.navigation p {
+	font-weight: bold;
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.navigation i:hover {
+	color: #1d4e89;
+	cursor: pointer;
+}

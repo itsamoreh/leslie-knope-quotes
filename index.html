@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leslie Knope Quotes</title>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- jQuery -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- Quotes -->
+    <script src="js/quotes.js"></script>
+  </head>
+
+  <body>
+
+    <!-- HEADING -->
+    <div class="heading">
+      <h1 class="text-accent text-center">LESLIE KNOPE QUOTES</h1>
+    </div>
+
+    <!-- picture -->
+    <div class="circle-img-outer">
+      <img class="circle-img" src="leslie.jpg"></img>
+    </div>
+
+    <!-- QUOTATION MARKS -->
+    <div class="qMarkContainer">
+      <div class="container">
+        <i class="fa fa-quote-left fa-2x text-dark"></i>
+      </div>
+      <div class="container qMarkContainer2">
+        <i class="fa fa-quote-right fa-2x text-dark"></i>
+      </div>
+    </div>
+
+    <!-- QUOTE BOX -->
+    <div class="quoteBox">
+      <div class="quoteBoxInner">
+        <p class="quote text-dark">I think this is going to be a good bonding experience with Ron. Guys love it when you can show them you're better than they are at something they love.</p>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="navigation">
+      <div class="container">
+          <div class="centerIcons">
+            <i id="tweet" class="fa fa-twitter fa-4x text-accent"></i>
+          </div>
+          <h2 class="text-accent">TWEET THIS QUOTE</h2>
+      </div>
+      <div class="container navContainer2">
+          <div class="centerIcons">
+            <i id="next" class="fa fa-arrow-right fa-4x text-accent"></i>
+          </div>
+          <h2 class="text-accent">NEXT RANDOM QUOTE</h2>
+      </div>
+    </div><!-- END NAVIGATION -->
+    <script>
+
+      $(document).ready(function() {
+        $("#next").on("click", function() {
+          $(".quote").html(function() {
+            return quotes[Math.floor(Math.random() * 42)].quote;
+          });
+        });
+        $("#tweet").on("click", function() {
+          var link = "http://twitter.com/intent/tweet?text=";
+          if ($(".quote").html().length > 122) {
+            for (var x = 0; x <= 122; x++) {
+              link += $(".quote").html()[x];
+            }
+            link += "... -Leslie Knope";
+            window.open(link, "_blank");
+          } else {
+            for (var x = 0; x < $(".quote").html().length; x++) {
+              link += $(".quote").html()[x];
+            }
+            link += " -Leslie Knope";
+            window.open(link, "_blank");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
