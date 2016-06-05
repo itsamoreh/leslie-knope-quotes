@@ -8,6 +8,7 @@ body {
 	width: 95%;
 	height: 95%;
 	margin: auto;
+	margin-bottom: 30px;
 }
 
 /* TEXT */
@@ -147,4 +148,24 @@ p {
 .navigation i:hover {
 	color: #1d4e89;
 	cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  height: 30px;
+}
+
+.footer > .container > p {
+  margin: 10px 0px;
+	text-align: center;
+	font-family: Roboto Condensed;
+	text-transform: uppercase;
+}
+
+.footer > .container > p > a {
+  color: #cc2936;
 }
