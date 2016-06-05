@@ -4,21 +4,20 @@ html {
 }
 
 body {
-	background-color: #a8a8a8;
+	/*background-color: #a8a8a8;*/
+	background-image: url("../confectionary.png");
+	background-repeat: repeat;
 	width: 95%;
 	height: 95%;
 	margin: auto;
-<<<<<<< HEAD
-=======
 	margin-bottom: 30px;
->>>>>>> master
 }
 
 /* TEXT */
 
 h1 {
 	font-family: Roboto Condensed;
-	font-size: 80px;
+	font-size: 75px;
 	font-weight: 700;
 	margin: 10px;
 	text-align: center;
@@ -107,7 +106,7 @@ p {
 .quote {
 	width: 800px;
 	font-weight: bold;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	margin: 0 auto;
 	text-align: center;
 	padding-top: 20px;
